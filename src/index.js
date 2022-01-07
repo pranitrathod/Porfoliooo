@@ -6,6 +6,7 @@ initScrollReveal(targetElements, defaultProps);
 initTiltEffect();
 
 var Change_Visitors_text=document.querySelector(".visitors");
+
 var visitCounts=localStorage.getItem('on_load_counter');
 
 if(visitCounts==null){
