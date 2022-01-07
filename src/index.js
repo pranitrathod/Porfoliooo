@@ -6,17 +6,14 @@ initScrollReveal(targetElements, defaultProps);
 initTiltEffect();
 
 var Change_Visitors_text=document.querySelector(".visitors");
-var visitCounts=localStorage.getItem("page_view");
+var visitCounts=localStorage.getItem('on_load_counter');
 
-if (visitCounts)
-{
-    visitCount=Number(visitCounts)+1;
-    localStorage.getItem("page_view",visitCounts);
-
+if(visitCounts==null){
+  
+    visitCounts=0;
 }
-else{
-    visitCounts=1;
-    localStorage.getItem("page_view",visitCounts);
-}
+visitCounts++;
 
-Change_Visitors_text.innerHTML=visitCounts;
+localStorage.setItem('on_load_counter',visitCounts);
+
+Change_Visitors_text.innerHTML="Visitors : "+visitCounts;
