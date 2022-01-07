@@ -19,4 +19,4 @@ else{
     localStorage.getItem("page_view",visitCounts);
 }
 
-Change_Visitors_text.innerHTML="Visitors:",visitCounts;
+Change_Visitors_text.innerHTML=visitCounts;
