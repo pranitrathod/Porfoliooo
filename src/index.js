@@ -5,16 +5,16 @@ import { targetElements, defaultProps } from "./data/scrollRevealConfig";
 initScrollReveal(targetElements, defaultProps);
 initTiltEffect();
 
-var Change_Visitors_text=document.querySelector(".visitors");
+// var Change_Visitors_text=document.querySelector(".visitors");
 
-var visitCounts=localStorage.getItem('on_load_counter');
+// var visitCounts=localStorage.getItem('on_load_counter');
 
-if(visitCounts==null){
+// if(visitCounts==null){
   
-    visitCounts=0;
-}
-visitCounts++;
+//     visitCounts=0;
+// }
+// visitCounts++;
 
-localStorage.setItem('on_load_counter',visitCounts);
+// localStorage.setItem('on_load_counter',visitCounts);
 
-Change_Visitors_text.innerHTML="Visitors : "+visitCounts;
+// Change_Visitors_text.innerHTML="Visitors : "+visitCounts;
